@@ -1,0 +1,93 @@
+body {
+    background-color: #FFE4B5; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333; 
+}
+
+h2 {
+    color: #FFA500; 
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.cont {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #FFA500; 
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #FFA500; 
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFA500; 
+    color: #FFFFFF; 
+}
+
+.formcont {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    background-color: #FFA500; 
+    color: #FFFFFF; 
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.tdl {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #FFA500; 
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.tdl h2 {
+    color: #FFA500; 
+}
+
+.tdl ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tdl ul li {
+    margin-bottom: 10px;
+    color: #555; 
+}
+
+.rform {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"]:disabled {
+    background-color: #FFA500;
+    cursor: not-allowed;
+}

@@ -1,0 +1,127 @@
+body{
+    background-color: pink;
+}
+.bigwrap{
+    width: 1200px;
+    margin: auto;
+}
+.wrapper{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(https://blog.adobe.com/en/publish/2022/09/08/media_199508d79870be49377a327889db41dfa867c18ba.jpeg?width=750&format=jpeg&optimize=medium);
+    border: 1px solid black;
+    text-align: center;
+    width: 1198px;
+}
+
+.wrapper2{
+    background-color: rgb(235, 125, 255);
+    text-align: center;
+    height: 50px;
+    width: 1200px;
+    padding-top: 1px;
+}
+.btnstyle{
+    box-shadow: 0px 1px 0px 0px #fbafe3;
+    background:linear-gradient(to bottom, #f7b2d7 5%, #ef027d 100%);
+    background-color:#f7b2d7;
+    border-radius:15px;
+    border:2px solid #ee1eb5;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:12px 16px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #c70067;
+}
+
+.wrapper3{
+    text-align: center;
+    background-color: rgb(235, 125, 255);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.btnstyle:hover{
+    background:linear-gradient(to bottom, #ef027d 5%, #f7b2d7 100%);
+    background-color:#ef027d;
+}
+
+.btnstyle:active {
+    position:relative;
+    top:1px;
+}
+
+.wrapper4{
+    width: 1200px;
+    height: 450px;
+    padding-top: 1px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(https://hips.hearstapps.com/hmg-prod/images/group-portrait-of-adorable-puppies-royalty-free-image-1687451786.jpg?crop=0.89122xw:1xh;center,top&resize=1200:*);
+    color:#ffffff;
+    border-radius: 15px;
+}
+
+#t1{
+    line-height: 0%;
+    
+}
+.ttcont{
+    float: right;
+    text-align: justify;
+    width: 970px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.firsttitle{
+    line-height: 0%;
+}
+#t1pic{
+    float:left ;
+    width: 200px;
+    height: auto;
+   padding-left: 10px;
+}
+
+.wrapper5{
+    width: 1200px;
+    height: 450px;
+    background-image: url(https://w0.peakpx.com/wallpaper/154/116/HD-wallpaper-video-game-league-of-legends-yuumi-league-of-legends-thumbnail.jpg);
+    padding-top: 1px;
+    border-radius: 15px;
+}
+#t2{
+    line-height: 1px;
+}
+
+#t2pic{
+    width: 200px;
+    padding-left: 10px;
+}
+
+#t3pic{
+    width: 200px;
+    padding-left: 10px;
+}
+#t3{
+    line-height: 1px;
+}
+
+.wrapper6{
+    color: #ffffff;
+    width: 1200px;
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(https://images.theconversation.com/files/226825/original/file-20180709-122262-6ap5ri.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4795%2C2397&q=45&auto=format&w=1356&h=668&fit=crop);
+    padding-top: 1px;
+    border-radius: 15px;
+}
+
+img{
+    border-radius: 15px;
+}

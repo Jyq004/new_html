@@ -1,0 +1,85 @@
+/* glry-admin.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A606E;
+}
+
+.container {
+    max-width: 500px; 
+    margin: auto; 
+    padding: 20px;
+}
+
+.container h1{
+    text-align: center;
+}
+.wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.return {
+    text-align: left;
+}
+
+.return a {
+    color: #333;
+    text-decoration: none;
+}
+
+.return i {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}

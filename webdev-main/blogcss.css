@@ -1,0 +1,150 @@
+/*admin blog edit*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d8fcff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.wrapblog {
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cce9f4;
+}
+
+.upprofile{
+    width: 350px;
+}
+
+.nnd{
+    width: 250px;
+    float:right;
+}
+
+.ess{
+    padding-top: 70px;
+}
+
+.bid{
+    margin-block-start: 0;
+
+
+}
+
+.blog-entry {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.blog-entry p {
+    margin: 10px 0;
+}
+
+.icon {
+    float:left;
+    height: 62px;
+    width: 62px;
+    margin-right: 20px;
+    background-color: #7d2ae8;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+
+.icon img {
+  margin-top: 1px;
+  margin-left: 1px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.imagebox {
+    text-align: center;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btnset {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218c53;
+}
+
+/*--------------View Blog-------------------*/
+
+#pbtn{
+    float:right;
+}
+
+.ptt{
+    text-align: center;
+}
+
+#inform{
+    margin: auto;
+    text-align: center;
+    width: 450px;
+}
+
+#ct{
+    float:left;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+#ctbox{
+    width: 500px;
+    height: 200px;
+    margin:auto;
+}
+
+#pbtn{
+    float:right;
+
+}
+
+.error{
+    border: 1px solid #333;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+}
