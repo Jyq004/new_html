@@ -21,6 +21,9 @@ body {
     text-align: right;
     margin-bottom: 20px;
 }
+.fa-solid, .fas{
+    cursor: pointer;
+}
 
 .home a {
     color: #000;
