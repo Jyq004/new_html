@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <div class='home'><a href="index.php"><i class="fa-solid fa-x"></i></a></div>
+        <div class='home'><i id="back-btn" class="fa-solid fa-x"></i></div>
         <?php
         session_start();
         include 'dbcon.php';
@@ -63,5 +63,27 @@
         }
         ?>
     </div>
+
+
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function() {
+            <?php
+            if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+                $userID = $_SESSION['userID'];
+                $query = "SELECT Role FROM member WHERE MemberID = '$userID'";
+                $result = mysqli_query($conn, $query);
+
+                if (mysqli_num_rows($result) > 0) {
+                    $row = mysqli_fetch_assoc($result);
+                    if ($row['Role'] === 'Admin') {
+                        echo "window.location.href = 'adindex.php';";
+                    } else {
+                        echo "window.location.href = 'index.php';";
+                    }
+                }
+            }
+            ?>
+        });
+    </script>
 </body>
 </html>
