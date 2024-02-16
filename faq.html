@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d6539403e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/faq.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <button class="accordion">
+                What is FurEverGuardian?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Furever Guardians is more than just an animal sanctuary  it's a beacon of hope for animals in need. Our mission is simple yet profound: to rescue, rehabilitate, and rehome animals facing hardship and adversity. With every furry friend that finds solace within our walls, we strive to make a lasting impact on their lives and the community at large.
+
+From the moment an animal steps through our doors, they are met with unwavering compassion and care. Our dedicated team of caregivers and volunteers works tirelessly to provide shelter, nourishment, and medical attention to animals who have been abandoned, neglected, or abused. We offer a safe haven where they can heal, both physically and emotionally, and regain their trust in humanity.
+
+But our mission extends beyond just providing temporary refuge. We believe in the power of rehabilitation  of helping animals overcome their past traumas and embrace a brighter future. Through tailored rehabilitation programs, we work closely with each animal to address their individual needs and guide them on their journey to recovery.
+
+And when the time is right, we embark on the next chapter of their journey: finding them a loving, forever home. Through our adoption services and foster care program, we match animals with compassionate individuals and families who will cherish and care for them for life. It's a moment of joy and celebration as each animal takes their first steps into a future filled with love and security.
+
+But our work doesn't stop there. We are staunch advocates for responsible pet ownership and the well-being of all animals. Through education and outreach efforts, we strive to raise awareness about animal welfare issues and promote the importance of spaying, neutering, and proper pet care. We empower our community to become ambassadors for change, fostering a culture of compassion and respect for all living beings.
+
+Furever Guardians is more than just an organization  it's a movement fueled by love, dedication, and a shared vision for a brighter future for animals everywhere. With your support, we can continue to make a profound difference in the lives of those who need it most. Together, let's build a world where every animal is treated with kindness, compassion, and dignity because every life deserves a chance to thrive. Welcome to Furever Guardians, where hope knows no bounds.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How to surrender pet?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, quos sequi? Temporibus, adipisci ipsa? Doloribus, 
+                    amet quidem cumque deserunt nobis voluptatum earum rerum, culpa modi, obcaecati repudiandae? Ducimus labore, doloremque
+                    quos reprehenderit dicta amet neque fuga harum exercitationem nulla eum, vel accusantium quas unde consequuntur architecto
+                    quibusdam molestiae nostrum quaerat totam. Eius nam quaerat, quis a molestiae porro reprehenderit accusamus voluptatem tempore
+                    iure alias nobis, possimus sit quisquam perferendis minima ab est sunt! Labore qui officia nesciunt maxime amet placeat necessitatibus
+                    sit explicabo! Facere, blanditiis voluptatum ut delectus nemo natus, porro molestiae velit esse magnam exercitationem alias ratione voluptate reiciendis.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Can adopt animal be refund?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    No, adopted animals typically cannot be refunded. When you adopt an animal from a shelter or rescue organization, it is considered a permanent commitment to the well-being and care of that animal. Refunding adopted animals would not only undermine the responsibility of pet ownership but also pose risks to the animal's welfare.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                What payment method does the FurEverGuardian provide?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    The website supports multiple payment methods, including cash, Touch 'n Go (TNG), and online banking. These options provide flexibility and convenience for users to choose the payment method that best suits their preferences and needs.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How change incorrect name and email address?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    To change an incorrect name and email address:<br>
+                    1. Go to your profile page.<br>
+                    2. Select the "Edit" button next to your profile picture.<br>
+                    3. You will be navigated to the "Edit Profile" page, where you can update or change your incorrect name and email address.<br>
+                    4. Enter the correct name and email address in the respective fields.<br>
+                    5. Once you have made the necessary changes, click the "Update" button to save your edits.<br>
+                    6. Your profile information, including the name and email address, will be updated with the new information.<br>
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How to participate event?
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    1. Navigate to the event page.<br>
+                    2. Simply click on the "Join" button.<br>
+                    3. You will be automatically registered for the event.<br>
+                    4. You may receive a confirmation message or email with event details.<br>
+                    5. You are now successfully joined and ready to participate in the event.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i = 0; i < acc.length ; i++){
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+
+                if(pannel.style.display === "block"){
+                    pannel.style.display = "none";
+                } else{
+                    pannel.style.display = "block"
+                }
+            });
+        }
+    </script>
+</body>
+</html>
