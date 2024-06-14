@@ -176,10 +176,8 @@ public class Login extends javax.swing.JFrame {
         return;
     }
     
-    boolean ls = false;
-    boolean ad = false;
-    boolean pt = false;
-    boolean dc = false;    
+    boolean ls = false; 
+    String role = "";
     try (BufferedReader br = new BufferedReader(new FileReader("C:\\JavaLab10\\ClinicManagementSystem\\patients.txt"))) {
     String line;
  
@@ -187,17 +185,7 @@ public class Login extends javax.swing.JFrame {
             String[] patientDetails = line.split(",");
             if (patientDetails[2].equals(username) && patientDetails[3].equals(password)) {
                 ls = true;
-                if(patientDetails[8].equals("admin")){
-                    ad = true;
-                }
-                if(patientDetails[8].equals("patient")){
-                    pt = true;
-                }
-                if(patientDetails[8].equals("doctor")){
-                    dc = true;
-                }                
-                
-                
+                role = patientDetails[8];
                 break;
             }
         } 
@@ -207,17 +195,17 @@ public class Login extends javax.swing.JFrame {
     
     if (ls){
         JOptionPane.showMessageDialog(this, "Login successful", "Success", JOptionPane.INFORMATION_MESSAGE);
-        if(ad){
+        if(role.equals("admin")){
             AdminPage sp = new AdminPage(username);
             sp.setVisible(true);
-            this.dispose();  
+            this.dispose();     
         }
-        if(pt){
+        if(role.equals("patient")){
             PatientPage sp = new PatientPage();
             sp.setVisible(true);
             this.dispose();  
         }
-        if(dc){
+        if(role.equals("doctor")){
             DoctorPage sp = new DoctorPage();
             sp.setVisible(true);
             this.dispose();  

@@ -248,10 +248,6 @@ public class Register extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_emailActionPerformed
 
-    private void ageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ageActionPerformed
-
     private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passActionPerformed
@@ -293,7 +289,7 @@ public class Register extends javax.swing.JFrame {
         String genderText = (String) gender.getSelectedItem();
         String ageText = age.getText();
         String emailText = email.getText();
-        String patientId = generatePatientID();
+        String patientId = GenerateID.generatePatientID();
         String role = "patient";
         
 
@@ -332,41 +328,23 @@ public class Register extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Please enter a valid age (1-100)", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-           
-            try (FileWriter writer = new FileWriter("C:\\JavaLab10\\ClinicManagementSystem\\patients.txt", true)) {
-             writer.write(patientId + "," + nameText + "," + usernameText + "," + passwordText + "," + teleText + "," +
-                         genderText + "," + ageText + "," + emailText + "," + role + "\n");
-            JOptionPane.showMessageDialog(this, "Registration successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-            Login sp = new Login();
-            sp.setVisible(true);
-            this.dispose();
+
+        try (FileWriter writer = new FileWriter("C:\\JavaLab10\\ClinicManagementSystem\\patients.txt", true)) {
+         writer.write(patientId + "," + nameText + "," + usernameText + "," + passwordText + "," + teleText + "," +
+                     genderText + "," + ageText + "," + emailText + "," + role + "\n");
+        JOptionPane.showMessageDialog(this, "Registration successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        Login sp = new Login();
+        sp.setVisible(true);
+        this.dispose();
         } catch (IOException e) {
             JOptionPane.showMessageDialog(this, "Error writing to file", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_registerActionPerformed
-    private String generatePatientID() {
-        int maxID = 0;
-        File data = new File("C:\\JavaLab10\\ClinicManagementSystem\\patients.txt");
 
-        if (data.exists()) {
-            try (BufferedReader reader = new BufferedReader(new FileReader(data))) {
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    if (line.trim().isEmpty()) continue; 
-                    String[] parts = line.split(",");
-                    String idStr = parts[0].substring(1); 
-                    int id = Integer.parseInt(idStr);
-                    if (id > maxID) {
-                        maxID = id;
-                    }
-                }
-            } catch (IOException e) {
-                maxID = 0;
-            }
-        }
+    private void ageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ageActionPerformed
 
-        return String.format("P%03d", maxID + 1); 
-    }
     
     
     /**
